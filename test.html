@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+      .test{
+        height: 1000px;
+        width: 100%;
+      }
+        .box-bg{
+    overflow: hidden;
+}
+.box{
+    position:relative;
+}
+.box .pic{
+    position: relative;
+    z-index: 1;
+    transform-origin: 95% 50% 0;
+    transition: all 0.5s ease 0s;
+}
+.box .pic:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left:95%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+    margin: -4px 0 0 -4px;
+}
+    </style>
+</head>
+<body>
+  <div class="test">
+  <div class="box-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="box">
+                    <div class="pic">
+                        <img src="images/img-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="title"><a href="#">......</a></h3>
+                        <p class="description">......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

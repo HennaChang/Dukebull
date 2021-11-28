@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Duke</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- test -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <script src='js/imagesloaded.pkgd.min.js'></script>
+    <script  src="./js/script.js"></script>  
+    <style>
+        .test{
+            padding: 0 px;
+            width: 100%;
+
+        }
+        .about-title{
+            /* margin:0px 50px; */
+            padding: 8%;
+            width: 100%;
+        }
+        .about-word{
+            height: 100%;
+            width: 40%;
+            margin: 60px;
+            line-height: 2;
+        }
+        .about-img img{
+            object-fit: contain;
+            width: 100%;
+        }
+        .about-page3{
+            margin: 100px 0;
+        }
+        .spe{
+            height: 700px;
+            width: 100%;
+            background-color: #badee2;
+            padding: 100px;
+        }
+        .spe img{
+          height: 400px;
+          width: 400px;
+          object-fit: cover;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .about-1{
+          margin: 0 auto;
+        }
+        .pro{
+          margin: 30px 0;
+        }
+        .pro p{
+          text-align: center;
+        }
+        /* mycard */
+        *{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.mycard{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+ 
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+ 
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+ 
+.container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+ 
+.front,
+.back{
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  color: rgb(107, 105, 105);
+  font-size: 1.5rem;
+}
+ 
+.back{
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#badee2 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#badee2 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#badee2 100%);
+}
+ 
+.front:after{
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+ 
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+ 
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+ 
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+ 
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+ 
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+ 
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+ 
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+ 
+.front .inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+.inner p{
+  text-overflow : ellipsis;
+  overflow : hidden; 
+  /* white-space: nowrap; */
+
+}
+ 
+@media screen and (max-width: 1024px){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+  .mycard,.spe{
+    width: 80%;
+    margin: 0 auto;
+    display:inline;
+    z-index: 1;
+}
+  .spe{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+ 
+@media screen and (max-width: 768px){
+  .col{
+    width: calc(50% - 2rem);
+  }
+  .mycard,.spe{
+    width: 80%;
+    margin: 0 auto;
+    display:inline;
+    z-index: 1;
+}
+  .spe{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .spe img{
+    height: 300px;
+    width: 300px;
+  }
+  .about-word{
+    height: 300px;
+    width: 100%;
+  }
+  .about-title{
+    padding: 0 0 0 20px;
+  }
+}
+ 
+@media screen and (max-width: 512px){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .mycard,.spe{
+    width: 80%;
+    margin: 0 auto;
+    display:inline;
+    z-index: 1;
+}
+.spe{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    padding: 20px;
+
+
+  }
+}                 
+      
+    </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+        <div class="social-media-icons flexprop">
+            <a href="#" title="instagram"><i class="fab fa-instagram "></i></a>
+            <a href="#" title="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="nav navtitle">
+            <ul class="navfouce flexprop">
+                <li class="item-N-n"><a href="dukebull.html" class="">Home</a></li>   
+                <li class="item-N-n"><a href="about.html" class="">About</a></li>   
+                <li class="item-N-n pic-logo"><a href="dukebull.html" class="pic-logo"><img src="./img/logo.png" alt=""></a></li>
+                <li class="item-N-n"><a href="product-page.html" class="">Product</a></li>
+                <li class="item-N-n"><a href="share.html" class="">Share</a></li>   
+                <li class="item-N-n"><a href="#" class="">Location</a></li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" class="showmenu"><i class="fas fa-paw"></i></a>
+
+</header>
+    <section class="about-page1">
+      <div class="test">
+        <div class="about-title row">
+            <div class="about-img"><img src="./img/1601364597-1981560934-g_n.png" alt=""></div>
+            <div class="about-word">
+                <h3>品牌故事</h3>
+                <p class="about-p"> 塞萬提斯說過，重要的不在於你是誰生的，而在於你跟誰交朋友。這句話反映了問題的急切性。我們都很清楚，這是個嚴謹的議題。品牌理念的存在，令我無法停止對他的思考。品牌理念，到底應該如何實現。</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-page2">
+        <div class="spe flexprop" style="text-align: center;">
+          <div class="about-1 textEditor"><img src="./img/1601364689-1291881370-g_n.png" alt="">
+            <p class="pro" style="text-align: center;">高成本使用每週跨海直送來台的北海道函館直送3.7牛乳<br>
+              品質維持的用心，好喝美味的決心</p>
+          </div>
+          <div class="about-1 textEditor"><img src="./img/pexels-tima-miroshnichenko-6545351.jpg" alt="">
+            <p class="pro" style="text-align: center;">台灣梨山產的高山茶沖泡而成<br>
+              每一口都能到很濃順的茶葉香味</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="about-page3">
+        <div class="mycard">
+            <div class="wrapper">
+                <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                      <div class="front" style="background-image: url(./img/120182001_166472628420716_8469646343911595722_n.jpeg)">
+                        <div class="inner">
+                          <p>專業</p>
+                                <span>給您最好的</span>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="inner">
+                          <p> 南斯拉夫曾說過一句意義深遠的話，每個鳥兒都知道向群裡飛。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="wrapper">
+                <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                      <div class="front" style="background-image: url(./img/1601355172-2878170242-g_n.png)">
+                        <div class="inner">
+                          <p>尊榮</p>
+                                <span>給您舒適的環境</span>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="inner">
+                          <p>泰戈爾曾提出，閃射理想之光吧，心靈之星！把光流注入，未來的暮靄之中。想必各位已經看出了其中的端倪。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                      <div class="front" style="background-image: url(./img/hall.jpeg)">
+                        <div class="inner">
+                          <p>高品質</p>
+                                <span>給您最高品質</span>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="inner">
+                          <p>本公司堅持使用高海拔及高成本的台灣茶葉及SGS檢驗過的山泉水泡製茶葉</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            <div class="wrapper">
+                <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                      <div class="front" style="background-image: url(./img/1601365321-2899470873-g_n.png)">
+                        <div class="inner">
+                          <p>衛生</p>
+                                <span>讓您喝的安心</span>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="inner">
+                          <p>注重衛生環境，讓您喝的安心。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>    
+
+        </div>
+
+    </section>
+
+    <footer>
+      <div class="footer-word">
+          <p>連絡電話：02-2799-3769
+              <br>電子郵件：
+              service@gmail.com.tw
+              <br>公司地址：
+              台北市內湖區江南街73號</p>
+
+      </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        // nav
+     const navTop = $('.navtitle').offset().top;
+        
+        $(window).scroll(function(){
+                // console.log('.navTop:',navTop); 
+                // console.log('scrollTop:', $(window).scrollTop());
+    
+                if ($(window).scrollTop() >= navTop){
+                    console.log ($(window).scrollTop() >= navTop);
+                    $('.navtitle').addClass('fixed');
+                }
+                else{
+                    $('.navtitle').removeClass('fixed');
+                }
+            });
+
+     $(document).ready(function() {
+     $('.showmenu').on('click',  function(e) {
+         e.preventDefault();
+         $('body').toggleClass('menu-show');
+     });
+   });
+
+    </script>
+</body>
+</html>

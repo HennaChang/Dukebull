@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <style>
+        .header-img{
+            height: 400px;
+            width: 100%;
+            background: url(./img/pexels-sarah-chai-7263015.jpg) center center no-repeat;
+            /* background-clip: content-box; */
+            background-size: cover;
+            opacity: .8;
+        }
+        .head{
+            height: 200px;
+            width: 50%;
+            position: relative;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        .head h2{
+            text-shadow: 1px 1px rgb(200,200, 200), 1px 2px rgb(120,120, 120), 2px 2px rgb(80,80, 80);
+        }
+        /* .head p,.head h2,.head span{
+            width: 100%;
+        } */
+    /* page2 */
+    .share-page{
+        margin: 10%;
+        /* padding: 10%; */
+    }
+.box{
+    /* border: 1px solid #333; */
+    position: relative;
+    overflow: hidden;
+    max-width: 50%;
+    max-height: 500px;
+    margin: 50px auto;
+
+}
+.box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.box .box-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20% 20px;
+    background: rgba(0,0,0,0.6);
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    transition: all 0.50s ease 0s;
+}                
+.box .title{
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 15px 0;
+    position: relative;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all .3s ease-in-out 0.2s;
+}           
+.box .post{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all .3s ease-in-out 0.4s;
+}
+.box .description{
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all .3s ease-in-out 0.6s;
+}
+.box .read{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all 0.3s ease-in-out 0.8s;
+}
+.box .read:hover{
+    color: #e8802e;
+    text-decoration: none;
+}
+.box:hover .box-content,
+.box:hover .title,
+.box:hover .post,
+.box:hover .description,
+.box:hover .read {
+    transform:rotate(0deg);
+}
+.our-product{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-product h1{
+    text-shadow: 1px 1px rgb(200,200, 200), 1px 2px rgb(120,120, 120), 2px 2px rgb(80,80, 80);
+
+}
+        
+/* product-area */
+.share-product-area{
+    background-color: #badee2;
+    padding: 100px 0;
+}
+.sharepage{
+    position: relative;
+    /* left: 50%; */
+    transform: translateX(-50%);
+    /* margin: 0 auto; */
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        width: 1000px;
+    }
+    
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="social-media-icons flexprop">
+                <a href="#" title="instagram"><i class="fab fa-instagram "></i></a>
+                <a href="#" title="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <a href="#" class="showmenu"><i class="fas fa-paw"></i></a>
+
+            <div class="nav navtitle">
+                <ul class="navfouce flexprop">
+                    <li class="item-N-n"><a href="dukebull.html" class="">Home</a></li>   
+                    <li class="item-N-n"><a href="about.html" class="">About</a></li>   
+                    <li class="item-N-n pic-logo"><a href="dukebull.html" class="pic-logo"><img src="./img/logo.png" alt=""></a></li>
+                    <li class="item-N-n"><a href="product-page.html" class="">Product</a></li>
+                    <li class="item-N-n"><a href="share.html" class="">Share</a></li>   
+                    <li class="item-N-n"><a href="#" class="">Location</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </header>
+
+    <section class="share-page1">
+        <div class="header-img">
+            <div class="head"><p class="header-word"><h2>最新消息＆文章分享 <hr><span>Lastest News</span></h2></p></div>
+        </div>
+    </section>
+
+    <section class="share-page2">
+    <div class="share-page">
+        <div class="box">
+            <img src="./img/share1.jpg" alt=""/>
+            <div class="box-content">
+                <h3 class="title">POPODALIY</h3>
+                <span class="post">貝ㄦ貪食怪</span>
+                <p class="description">
+                    【內湖飲料】法鬥公爵Duke Bull 嚴選北海道鮮奶就是好喝！
+                </p>
+                <a href="https://www.popdaily.com.tw/forum/food/813492?fromPage.pageName=web-search&fromPage.pageComponent=result-list" class="read">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/share2.jpg" alt=""/>
+            <div class="box-content">
+                <h3 class="title">POPODALIY</h3>
+                <span class="post">貝ㄦ貪食怪</span>
+                <p class="description">
+                    【台北食記】手搖飲不用再拿著走，內湖高質感飲料店法鬥公爵超華麗裝潢
+                </p>
+                <a href="https://www.popdaily.com.tw/forum/food/846569?fromPage.pageName=web-search&fromPage.pageComponent=result-list" class="read">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/share3.jpeg" alt=""/>
+            <div class="box-content">
+                <h3 class="title">POPODALIY</h3>
+                <span class="post">波波發胖</span>
+                <p class="description">這家法鬥小店長坐鎮的網美飲料店，配上超美歐式內用區，絕對讓妳賴著不想走！！
+                </p>
+                <a href="https://www.popdaily.com.tw/food/806805?fromPage.pageName=web-search&fromPage.pageComponent=result-list" class="read">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/share1.jpg" alt=""/>
+            <div class="box-content">
+                <h3 class="title">POPODALIY</h3>
+                <span class="post">貝ㄦ貪食怪</span>
+                <p class="description">
+                    【內湖飲料】法鬥公爵Duke Bull 嚴選北海道鮮奶就是好喝！
+                </p>
+                <a href="https://www.popdaily.com.tw/forum/food/813492?fromPage.pageName=web-search&fromPage.pageComponent=result-list" class="read">read more</a>
+            </div>
+        </div>
+    </div><!-- share-page -->
+    <div class="our-product"><p><h1>OUR PRODUCTS</h1></p></div>
+</div><!-- page3-main -->
+<div class="share-product-area">
+<div class="product-items"><!-- product-items -->
+    <div class="card">
+        <img src="./img/0001guanyinlatte.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">鐵觀音拿鐵<hr>Tieguanyin Latte</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/0002naigailvucha.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">奶蓋綠茶<hr>Cheese Cream Green Tea</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/0003honeygreentea.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">蜂蜜綠茶<hr>Honey Green Tea</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/0004machalatte.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">抹茶拿鐵<hr>Matcha Latte</p>
+        </div>
+      </div>
+</div><!-- product-items end-->
+
+<div class="readmore sharepage" style="margin: 0 50%;"><a href="product-page.html" style="color:rgb(175, 171, 171);">View More<a></div>
+</div>
+    </section>
+
+    <footer>
+        <div class="footer-word">
+            <p>連絡電話：02-2799-3769
+                <br>電子郵件：
+                service@gmail.com.tw
+                <br>公司地址：
+                台北市內湖區江南街73號</p>
+
+        </div>
+    </footer>
+    
+    <!-- jq -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+ // nav
+     const navTop = $('.navtitle').offset().top;
+        
+    $(window).scroll(function(){
+            // console.log('.navTop:',navTop); 
+            // console.log('scrollTop:', $(window).scrollTop());
+
+            if ($(window).scrollTop() >= navTop){
+                console.log ($(window).scrollTop() >= navTop);
+                $('.navtitle').addClass('fixed');
+            }
+            else{
+                $('.navtitle').removeClass('fixed');
+            }
+        });
+        // slick
+    $(document).ready(function(){
+  $('.product-items').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive:[
+      {breakpoint:979,settings:{
+        slidesToShow:2,
+      }},
+      {breakpoint:753,settings:{
+        slidesToShow:1,
+      }},
+      {breakpoint:528,settings:{
+        slidesToShow:1,
+      }},
+    ],
+//   fade:true,
+  nextArrow: '.next_caro',
+  prevArrow: '.previous_caro'
+});
+  
+});
+
+$(document).ready(function() {
+     $('.showmenu').on('click',  function(e) {
+         e.preventDefault();
+         $('body').toggleClass('menu-show');
+     });
+   });
+
+    </script>
+</body>
+</html>

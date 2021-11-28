@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duke's</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <style>
+       .product-main{
+           max-height: 50%;
+           width: 80%;
+           margin: 0 auto;
+       }
+       .product-main img{
+           height:400px;
+           width: 100%;
+           object-fit: contain;
+           margin: 0 auto;
+       }
+       .price{
+           color: #515151;
+           font-size: 16px;
+           font-family: "Belleza";
+           text-align: center;}
+        .product-card img{
+            height: 300px;
+            width: 100%;
+            object-fit: contain;
+            margin: 25px;
+        
+        }
+        .product-card{
+            /* outline: 1px solid #ccc; */
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+
+            
+        }
+        .produ{
+            width: 100%;
+            object-fit: cover;
+        }
+        .drink{
+            margin:0 auto;
+        }
+        .product-page2{
+            padding: 200px;
+            background: url(./img/69311732.jpg) center no-repeat fixed;
+            object-fit: cover;
+
+        }
+        .menulist{
+            height: 60px;
+            width: 20%;
+            /* outline: 1px solid rgb(117, 90, 90); */
+            font-family: inherit;
+            text-align: center;
+            Text-overflow : ellipsis; 
+            overflow : hidden; 
+            white-space: nowrap;
+            vertical-align: middle;;
+            background-color: #badee2;
+            color: rgb(117, 116, 116);
+            padding: 5px;
+        }
+        .menulist:hover{
+            background-color: #3f3e3e;
+            transition: all 0.4s ease-in;
+        }
+        .menulist a{
+            color: rgb(117, 116, 116);
+            text-decoration:none;
+        }
+        .menulist a:hover{
+            color: #badee2;
+            transition: all 0.4s ease-in;
+            text-decoration:none;
+
+        }
+        .menu{
+            margin: 50px auto;
+        }
+        @media screen and (max-width: 1024px){
+            .menu{
+           display: none;
+           width: 500px;
+           margin: 0 auto;
+        }
+        .product-page2{
+            padding: 0%;
+        }
+        .product-card img{
+            margin: 0 auto;
+            /* padding: auto; */
+            height: 200px;
+        }
+        
+        }
+   
+        @media screen and (max-width: 768px){
+            .row{
+            display: inline-block;
+        }
+            
+        }
+   
+        @media screen and (max-width: 512px){
+            .row{
+            display: inline-block;
+        }
+
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="social-media-icons flexprop">
+                <a href="#" title="instagram"><i class="fab fa-instagram "></i></a>
+                <a href="#" title="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="nav navtitle">
+                <ul class="navfouce flexprop">
+                    <li class="item-N-n"><a href="dukebull.html" class="">Home</a></li>   
+                    <li class="item-N-n"><a href="about.html" class="">About</a></li>   
+                    <li class="item-N-n pic-logo"><a href="dukebull.html" class="pic-logo"><img src="./img/logo.png" alt=""></a></li>
+                    <li class="item-N-n"><a href="product-page.html" class="">Product</a></li>
+                    <li class="item-N-n"><a href="share.html" class="">Share</a></li>   
+                    <li class="item-N-n"><a href="#" class="">Location</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="showmenu"><i class="fas fa-paw"></i></a>
+
+    </header>
+    <section class="product-page1">
+        <div class="product-main">
+           <img src="./img/drawn.jpeg" alt="">
+           <div class="menu flexprop">
+               <div class="menulist latte "><a href="#"><p>拿鐵系列<br>FRESH MILK</p></a></div>
+               <div class="menulist honey"><a href="#"><p>奶蓋系列<br>CHEESE CREAM</p></a></div>
+               <div class="menulist tea"><a href="#"><p>茶品系列<br>FRESH TEA</p></a></div>
+               <div class="menulist boble"><a href="#"><p>珍珠系列<br>BOBLES</p></a></div>
+               <div class="menulist honey"><a href="#"><p>蜂蜜系列<br>HONEY</p></a></div>
+           </div>
+        </div>
+
+    </section>
+    <section class="product-page2">
+    
+    <div class="drink">
+    <div class="produ">
+        <div class="well text-center">
+            <div class="row">
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0001guanyinlatte.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">鐵觀音拿鐵<hr>Tieguanyin Latte</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>60<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0002naigailvucha.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">奶蓋綠茶<hr>Cheese Cream Green Tea</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>95<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0003honeygreentea.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">蜂蜜綠茶<hr>Tieguanyin Latte</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>60<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0004machalatte.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">抹茶拿鐵<hr>Matcha Latte</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>105<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0005facheilemon.jpeg    " alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">翡翠檸檬<hr>Lemon Green Tea</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>65<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0006blacklatte.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">紅茶拿鐵<hr>Black Tea Latte</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>95<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0008cocolatte.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">可可拿鐵<hr>Coco Latte</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>105<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <div class="product-card">
+                    <img src="./img/0009honeylatte.jpeg" alt="">
+                    <div class="card-body price">
+                        <p class="card-text ">蜂蜜拿鐵<hr>Honey Latte</p>
+                        <div class="price">
+                            <span class="nt">NT$</span>105<div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
+            </div><!-- row -->
+          </div>
+       
+    </div><!-- drink -->
+    
+
+
+    </section>
+    <footer>
+        <div class="footer-word">
+            <p>連絡電話：02-2799-3769
+                <br>電子郵件：
+                service@gmail.com.tw
+                <br>公司地址：
+                台北市內湖區江南街73號</p>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // nav
+     const navTop = $('.navtitle').offset().top;
+        
+        $(window).scroll(function(){
+                // console.log('.navTop:',navTop); 
+                // console.log('scrollTop:', $(window).scrollTop());
+    
+                if ($(window).scrollTop() >= navTop){
+                    console.log ($(window).scrollTop() >= navTop);
+                    $('.navtitle').addClass('fixed');
+                }
+                else{
+                    $('.navtitle').removeClass('fixed');
+                }
+            });
+
+            // show menu
+
+     $(document).ready(function() {
+     $('.showmenu').on('click',  function(e) {
+         e.preventDefault();
+         $('body').toggleClass('menu-show');
+     });
+   });
+    </script>
+</body>
+</html>
